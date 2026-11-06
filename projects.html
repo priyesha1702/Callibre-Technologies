@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Explore Projects | ProjectHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
+</head>
+<body>
+    <div id="site-header"></div>
+    <main class="shell page-main">
+        <div class="page-intro"><span class="eyebrow">THE LIBRARY</span><h1>Find your next<br><em>starting point.</em></h1><p>Explore completed builds and community submissions. Search by project, module, or user role.</p></div>
+        <section class="library-tools">
+            <label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="Search projects, modules, roles..."></label>
+            <div id="filters" class="filter-row"></div>
+            <div class="library-controls">
+                <label>Sort by <select id="sort-projects"><option value="default">Recommended</option><option value="az">Name: A to Z</option><option value="za">Name: Z to A</option><option value="modules">Most modules</option></select></label>
+                <label><input type="checkbox" id="favorites-only"> Show saved only</label>
+            </div>
+            <div class="result-line"><span id="result-count">0 projects</span><span>SELECT A CARD TO EXPLORE</span></div>
+        </section>
+        <p id="project-data-message" class="admin-message" role="status" aria-live="polite"></p>
+        <section id="project-grid" class="project-grid"></section>
+    </main>
+    <div id="site-footer"></div>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script type="module" src="assets/js/projects.js"></script>
+</body>
+</html>

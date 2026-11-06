@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Submit a Project | ProjectHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/enroll.css">
+</head>
+<body>
+    <div id="site-header"></div>
+    <main class="shell page-main enroll-layout">
+        <div class="page-intro">
+            <span class="eyebrow">YOUR TURN TO CREATE</span>
+            <h1>Put your idea<br><em>on the map.</em></h1>
+            <p>Describe what you're building, list its key modules, and identify the people who will use it.</p>
+            <div class="form-note"><span>✦</span><div><b>Keep it clear, not complicated.</b><small>You can start with a simple outline and refine it later.</small></div></div>
+        </div>
+        <form id="project-form" class="submission-form">
+            <div class="form-progress">
+                <div><span>PROJECT SUBMISSION</span><b id="progress-label">Step 1 of 3</b></div>
+                <div class="progress-track"><i id="progress-fill"></i></div>
+            </div>
+            <div class="field"><label for="title">Project title <sup>*</sup></label><input id="title" required maxlength="80" placeholder="e.g. Smart Campus Portal"><small>Give your project a clear, memorable name.</small></div>
+            <div class="field"><label for="requirements">Project overview <sup>*</sup></label><textarea id="requirements" required rows="5" maxlength="1000" placeholder="What problem does it solve? What should people be able to do?"></textarea><small>Describe the main purpose and expected features.</small></div>
+            <div class="field"><label for="module-input">Core modules <sup>*</sup></label><div class="input-action"><input id="module-input" placeholder="e.g. Authentication"><button type="button" class="btn small-btn" id="add-module">Add</button></div><div id="module-chips" class="chips"></div><small>Add at least one module. Press Enter or select Add.</small></div>
+            <div class="field"><label for="role-input">User roles <sup>*</sup></label><div class="input-action"><input id="role-input" placeholder="e.g. Administrator"><button type="button" class="btn small-btn" id="add-role">Add</button></div><div id="role-chips" class="chips"></div><small>Add at least one role that will interact with the project.</small></div>
+            <div class="field"><label for="client-name">Your name <sup>*</sup></label><input id="client-name" name="client-name" required maxlength="100" autocomplete="name" placeholder="e.g. Alex Morgan"></div>
+            <div class="field"><label for="client-email">Email address <sup>*</sup></label><input id="client-email" name="client-email" type="email" required maxlength="254" autocomplete="email" placeholder="you@example.com"></div>
+            <div class="field"><label for="client-phone">Phone number <sup>*</sup></label><input id="client-phone" name="client-phone" type="tel" required maxlength="32" autocomplete="tel" placeholder="+1 555 010 1234"></div>
+            <div class="form-bottom"><span id="form-message" role="status"></span><button class="btn primary" type="submit">Submit project <span>↗</span></button></div>
+        </form>
+    </main>
+    <div id="site-footer"></div>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script type="module" src="assets/js/enroll.js"></script>
+</body>
+</html>

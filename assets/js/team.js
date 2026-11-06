@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.person-card').forEach(card=>{card.addEventListener('pointerenter',()=>card.classList.add('is-active'));card.addEventListener('pointerleave',()=>card.classList.remove('is-active'));});});

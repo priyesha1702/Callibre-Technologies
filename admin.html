@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Admin Dashboard | ProjectHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+<body>
+    <div id="site-header"></div>
+    <main class="shell page-main admin-page">
+        <div class="admin-heading">
+            <div><span class="eyebrow">PROJECTHUB ADMIN</span><h1>Client submissions</h1><p>Review projects, follow up with clients, and update submission status.</p></div>
+            <button id="admin-signout" class="btn ghost" type="button">Sign out</button>
+        </div>
+        <div class="admin-summary">
+            <span>SUBMISSIONS</span>
+            <b id="submission-count">—</b>
+        </div>
+        <p id="dashboard-message" class="admin-message" role="status" aria-live="polite">Loading submissions...</p>
+        <section id="submission-list" class="submission-list" aria-live="polite"></section>
+    </main>
+    <div id="site-footer"></div>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script type="module" src="assets/js/admin.js"></script>
+</body>
+</html>
